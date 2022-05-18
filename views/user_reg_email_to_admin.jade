@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    meta(http-equiv='content-type' content='text/html; charset=windows-1252')
+    title Gigz Econ
+    style(type='text/css').
+      body{font-family: Helvetica,sans-Serif;color: #77798c;font-size: 14px;}
+  body
+    table(style='padding: 0' width='100%' cellspacing='0' cellpadding='0')
+      tbody
+        tr
+          td
+            table(style='margin: 0px auto 0px; text-align: center; box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); border-radius: 4px;background-color:#fff; padding: 20px' width='500px' cellspacing='0' cellpadding='0')
+              tbody
+                tr
+                  td
+                    img.img-responsive(src='http://developers.promaticstechnologies.com/goGroceryApis/views/images/grocery-go.png' width='150px;')
+                tr
+                  td
+                    table(style='margin: 10px auto; text-align: center; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 4px' width='100%' cellspacing='0' cellpadding='0')
+                      tbody
+                        tr
+                          td(style='text-align:center; background-color:#77798c; padding:30px')
+                            img(src='http://developers.promaticstechnologies.com/goGroceryApis/views/images/secdivider.png' width='100px')
+                        tr
+                          td
+                            h1(style='font-weight:normal;margin:20px 0 0;color:#664b13') Registered New User
+                        tr
+                          td
+                            h4(style='text-align:center; margin-bottom:0;color: #525252')
+                              | New user registered on your website:
+                              span(style='font-size: 18px; color: #000; padding-left:10px;') #{user.name}
+                            p(style='letter-spacing:1px;line-height:30px;text-align:left; padding:10px; padding-left:20px')
+                              | User Email:
+                              b #{user.email}
+                            p(style='letter-spacing:1px;text-align:left; margin-top: -30px; margin-bottom:30px; padding:10px; padding-left:20px')
+                              | User Type:
+                              b  Service Provider
+                            |                             You can approve or reject that registration.
+                        tr
+                          td(style='height:60px')

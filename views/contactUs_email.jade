@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    meta(http-equiv='content-type' content='text/html; charset=windows-1252')
+    title TacoMenus
+    style(type='text/css').
+      body{font-family: Helvetica,sans-Serif;color: #77798c;font-size: 14px;}
+  body
+    table(style='padding: 0' width='100%' cellspacing='0' cellpadding='0')
+      tbody
+        tr
+          td
+            table(style='margin: 0px auto 0px; text-align: center; box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); border-radius: 4px;background-color:#fff; padding: 20px' width='500px' cellspacing='0' cellpadding='0')
+              tbody
+                tr
+                  td
+                    img.img-responsive(src='https://68.183.173.21:3305/logo.png' width='150px;')
+                tr
+                  td
+                    table(style='margin: 10px auto; text-align: center; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1); background-color: #fff; border-radius: 4px' width='100%' cellspacing='0' cellpadding='0')
+                      tbody
+                        tr
+                          td
+                            p(style='letter-spacing:1px;line-height:30px;text-align:left; padding:10px; padding-left:20px')
+                              | Dear
+                              b #{emailData.name}
+                            p(style='letter-spacing:1px;text-align:left; margin-top: -30px; margin-bottom:30px; padding:10px; padding-left:20px')
+                              b  Message:
+                              |  #{emailData.message}
+                            p(style='letter-spacing:1px;text-align:left; margin-top: -30px; margin-bottom:30px; padding:10px; padding-left:20px')
+                              b  Reply:
+                              |  #{emailData.replyMessage}
+                        tr
+                          td(style='height:60px')
+                        tr
+                          td
+                            p(style='letter-spacing:1px;line-height:30px;text-align:center; ')
+                              | © 2021
+                              a(href='http://www.tacomenus.com' style='text-decoration: none;') Taco Menus
+                              | , Inc. All rights reserved.
